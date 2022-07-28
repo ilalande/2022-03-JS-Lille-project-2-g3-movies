@@ -1,34 +1,67 @@
-## Concept
+# CINERAMA - a Cinema Web Application on React
 
-This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying as simple as possible to use.
+## Contents
 
-## Setup & Use
+1. [General information](#general-information)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
+4. [Authors](#authors)
 
-### Project Initialization
+## General information
 
-- In VSCode, install plugins **Prettier - Code formatter** and **ESLint** and configure them
-- Clone this repo, enter it
-- Run command `npm run setup`
-- _NB: To launch the backend server, you'll need an environment file with database credentials. You'll find a template one in `backend/.env.sample`_
+This WebApp is an application based on the API ["The movie database"](https://www.themoviedb.org/) (TMDB). It offers access from the home page to the new movies of the week and to movies by genre. A "suggerator", a movie suggestion interface proposes a filter based on the mood, the state of tiredness and the interest of the spectator (which translates into a filter on the duration of the movie, its style and its release date). 
 
-### Available Commands
+### Project status and progress
 
-- `setup` : Initialization of frontend and backend, as well as all toolings
-- `dev` : Starts both servers (frontend + backend) in one terminal
-- `dev-front` : Starts the React frontend server
-- `dev-back` : Starts the Express backend server
-- `lint` : Runs validation tools, and refuses unclean code (will be executed on every _commit_)
-- `fix` : Fixes linter errors (run it if `lint` growls on your code !)
+This project is a Front project. It was developed by 6 developers in training at the Wild Code School of Lille (React Javascript) as a half training project (Project 2). 
+## Technologies
 
-## FAQ
+### Template
 
-### Tools
+- Template` : Application developed on React, Node Express from a [template](https://github.com/WildCodeSchool/js-template-fullstack) developed by the Wild Code School. Only the frontend was used. 
 
-- _Concurrently_ : Allows for several commands to run concurrently in the same CLI
-- _Husky_ : Allows to execute specific commands that trigger on _git_ events
-- _Vite_ : Alternative to _Create-React-App_, packaging less tools for a more fluid experience
-- _ESLint_ : "Quality of code" tool, ensures chosen rules will be enforced
-- _Prettier_ : "Quality of code" tool as well, focuses on the styleguide
-- _ Airbnb Standard_ : One of the most known "standards", even though it's not officially linked to ES/JS
-- _Nodemon_ : Allows to restart the server everytime a .js file is udated
+**Tools used in this template:**
+
+- _Concurrently_ : Allows to execute several commands in the same terminal
+- _Husky_ : Allows to execute actions when triggered by _git_ commands
+- _Vite_ : Alternative to _Create-React-App_, with fewer packages for a smoother experience
+- _ESLint_ : "Code quality" tool, ensures that pre-configured rules are respected
+- _Prettier_ : "code quality" tool also, focuses more specifically on code style
+- _Standard Airbnb_ : One of the most well known "standards", even if it is not officially linked to ES/JS
+- _Nodemon_ : Tool to restart a server each time one of the files is modified
+
+### Libraries used
+
+  - Styled Component was used to manage the style of the application.
+  - React Router to manage the links between pages.
+  - Swiper to manage the welcome carousel on the application.
+  - Prop-types to type the props.
+  - Axios for API calls.
+
+## Installation
+
+### To start a project
+
+    On VSCode, install Prettier - Code formatter and ESLint plugins and configure them
+    Clone this repository, go inside
+    Run the npm run setup command
+    NB: To run the backend, an environment file with the connection data of a valid DB is required. A sample can be found in backend/.env.sample
+
+### List of commands and meaning
+
+    setup : Initialization of the frontend and backend as well as the tools
+    dev : Start the three servers (frontend in the same terminal)
+    dev-front : Start a React server for the frontend
+    lint: Run code validation tools (will be run automatically at each commit)
+    fix: Fix formatting errors (to be run if lint doesn't pass)
+
+## Team
+
+A team of developers in training from March to June 2022 at the Wild Code School in Lille
+
+- [Amar](https://github.com/Dash293)
+- [Matthéo](https://www.linkedin.com/in/math%C3%A9o-boumbas/)
+- [Rémi](https://github.com/remi59800)
+- [Juliane](https://github.com/ilalande)
+- [Samir](https://www.linkedin.com/in/decambray-samir-952759233/)
+- [Valentin](https://www.linkedin.com/in/valentin-navarro-857199139/)
